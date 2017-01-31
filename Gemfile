@@ -12,6 +12,7 @@ gem 'turbolinks'
 gem 'pry-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'news_core', path: 'engines/core'
 
 group :development, :test do
   gem 'byebug'

@@ -1,3 +1,9 @@
+PATH
+  remote: engines/core
+  specs:
+    news_core (0.0.1)
+      rails (~> 4.2.7.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -158,6 +164,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  news_core!
   pg
   pry-rails
   puma
