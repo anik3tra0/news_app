@@ -3,7 +3,7 @@ module News
     protect_from_forgery with: :exception
 
     def current_ability
-      @current_ability ||= News::Ability.new(current_use)
+      @current_ability ||= News::Ability.new(current_user)
     end
   end
 end
