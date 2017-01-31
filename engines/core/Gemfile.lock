@@ -2,7 +2,12 @@ PATH
   remote: .
   specs:
     news_core (0.0.1)
+      autoprefixer-rails
+      bootstrap-sass
+      cancancan
+      devise
       rails (~> 4.2.7.1)
+      sass-rails
 
 GEM
   remote: https://rubygems.org/
@@ -133,13 +138,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  autoprefixer-rails
-  bootstrap-sass
-  cancancan
-  devise
   news_core!
   pg
-  sass-rails
 
 BUNDLED WITH
    1.13.6
