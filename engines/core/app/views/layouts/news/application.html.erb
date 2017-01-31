@@ -13,12 +13,20 @@
     <div class="navbar-header">
       <%= link_to "News", news.root_path, class: 'navbar-brand' %>
     </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <% if current_user %>
+        <li><%= link_to "Logout", news.destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Login", news.new_user_session_path %></li>
+      <% end %>
+    </ul>
   </div>
 </nav>
 
 <div class="container">
   <% flash.each do |type, message| %>
-    <div class="alert alert-<%= type == error ? 'danger' : 'success' %>"><%= message %></div>
+    <div class="alert alert-<%= type == 'error' ? "danger" : "success" %>"><%= message %></div>
   <% end %>
   <%= yield %>
 </div>
