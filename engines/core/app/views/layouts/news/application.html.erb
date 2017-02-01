@@ -15,6 +15,7 @@
     </div>
 
     <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "New entry", news.new_entry_path %></li>
       <% if current_user %>
         <li><%= link_to "Logout", news.destroy_user_session_path, method: :delete %></li>
       <% else %>

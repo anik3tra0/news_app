@@ -18,4 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '~> 4.2.7.1'
 
   s.add_development_dependency 'pg'
+
+  s.add_dependency 'news_core'
+  s.add_dependency 'deface'
 end
